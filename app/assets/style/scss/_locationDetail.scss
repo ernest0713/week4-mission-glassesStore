@@ -1,0 +1,53 @@
+.storeLocation{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $breakpoint-pc-md){
+        .branchCard{
+            flex-direction:row;
+            align-items: center;
+        }
+        .branchImg{
+            width: 48%;
+            margin-right: 30px;
+        }
+        .branchContent{
+            width: 48%;
+        }
+    }
+    @media (max-width: $breakpoint-phone-md){
+        .branchCard{
+            flex-direction:column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        .branchImg{
+            width: 100%;
+            margin-right: 0;
+        }
+        .branchContent{
+            width: 100%;
+        }
+    }
+    .storeDetails{
+        width: 40%;
+        margin-right: 30px;
+        margin-bottom: 32px;
+        @media (max-width: $breakpoint-pc-md){
+            margin-right: 0;
+            width: 100%;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            margin-bottom: 16px;
+        }
+    }
+    .locationMapImg{
+        width: 55%;
+        @media (max-width: $breakpoint-pc-md){
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+            height: 465px;
+        }
+    }
+}

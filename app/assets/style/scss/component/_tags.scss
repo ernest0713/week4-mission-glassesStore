@@ -1,0 +1,28 @@
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    .tagsItem{
+        margin-right: 16px;
+    }
+    .tagsItem:before{
+        content: '#';
+        color: $fouthText;
+        font-size: 24px;
+        line-height: 36px;
+        @media (max-width: $breakpoint-phone-md){
+            font-size: 14px;
+        }
+    }
+    .tagsLink, .tagsLink:visited{
+        font-size: 24px;
+        line-height: 36px;
+        text-decoration: none;
+        color: $fouthText;
+        @media (max-width: $breakpoint-phone-md){
+            font-size: 14px;
+        }
+    }
+    .tagsLink:hover, .tagsLink:active{
+        color: $primaryText;
+    }
+}

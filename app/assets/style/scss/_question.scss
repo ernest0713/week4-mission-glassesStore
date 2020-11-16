@@ -1,0 +1,93 @@
+.question{
+    .banner{
+        height: 304px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true");  
+        @media (max-width: $breakpoint-pc-lg){
+            padding-right: 39px;
+            padding-left: 39px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .subTitle{
+            position: relative;
+            display: flex;
+            height: 100%;
+            margin: 0;
+            h2{
+                font-size: 64px;
+                line-height: 80px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                @media (max-width: $breakpoint-pc-md){
+                    font-size: 48px;
+                }
+                @media (max-width: $breakpoint-phone-md){
+                    font-size: 28px;
+                }
+            }
+            .questionIcon{
+                width: 40px;
+                height: 57px;
+                @media (max-width: $breakpoint-pc-md){
+                    width: 30px;
+                    height: 43px;
+                }
+                @media (max-width: $breakpoint-phone-md){
+                    width: 16px;
+                    height: 24px;
+                }
+            }
+            
+        }
+    }
+}
+
+.questionList{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (max-width: $breakpoint-pc-lg){
+        padding: 40px;
+    }
+    @media (max-width: $breakpoint-pc-md){
+        padding-top: 24px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    h3{
+        font-size: 32px;
+        line-height: 63px;
+        margin-bottom: 36px;
+        @media (max-width: $breakpoint-pc-md){
+            font-size: 20px;
+        }
+    }
+    li{
+        margin-bottom: 40px;
+        h4{
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 16px;
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        p{
+            max-width: 920px;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+            @media (max-width: $breakpoint-phone-lg){
+                max-width: 630px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 14px;
+                line-height: 21px;
+                max-width: 345px;
+            }
+        }
+    }
+}

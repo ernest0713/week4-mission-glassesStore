@@ -8,10 +8,15 @@ img{
 body{
     font-family: 'Noto Sans','Roboto', sans-serif;
 }
-/* Utility setting */
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    @media (max-width: $breakpoint-pc-lg){
+        &{
+            max-width: 100%;
+        }
+    }
 }
 .sectTitle{
     font-weight: bold;
@@ -20,124 +25,61 @@ body{
     color: $primaryText;
     text-align: center;
     margin-bottom: 60px;
+    @media (max-width: $breakpoint-phone-lg){
+        &{
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+        }
+    }
+    @media (max-width: $breakpoint-phone-md){
+        &{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
 }
-
 .homeIcon{
     width: 48px;
     height: 48px;
+    @media (max-width: $breakpoint-phone-lg){
+        width: 24px;
+        height: 24px;
+    }
 }
 .bgCover{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $primaryBgColor;
-    color: $secondaryText;
-    padding: 30px 80px;
+.mainlogo{
+    display: block;
+    width: 80px;
+    height: 49px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    @media (max-width: $breakpoint-phone-md){
+        &{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
 .storelogo {
     width: 80px;
     height: 50px;
-}
-.menu {
-    display: flex;
-}
-.menu li{
-    margin-left: 62px;
-}
-.menu li:nth-child(1){
-    margin-left: 0;
-}
-.menuItem{
-    font-size: $primaryFontSize;
-    color: $secondaryText;
-    line-height: 30px;
-    text-decoration: none;
-}
-.menuItem:hover{
-    font-size: calc($primaryFontSize * 1.1);
+    @media (max-width: $breakpoint-phone-md){
+        &{
+            width: 48px;
+            height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
-.footer{
-    background: $primaryBgColor;
-    padding:36px 0px;
-}
-.footer .container{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
-}
-.fotMenu{
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-bottom: 32px;
-}
-.fotMenu li{
-    margin-right: 48px;
-}
-.fotMenu li:last-child{
-    margin-right: 0px;
-}
-.fotMenu a{
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    color: $secondaryText;
-}
-.fotIcon{
-    display: flex;
-}
-.fotIcon li{
-    margin-left: 32px;
-}
-.footer .contact li{
-    display: flex;
-    align-items: center;
-}
-.footer .contactList a{
-    text-decoration: none;
-    color: $secondaryText;
-    font-size: 36px;
-    line-height: 54px;
-}
-.footer .contact .contactListItem{
-    margin-left: 12px;
-}
-.copyright{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #FFFFFF;
-    padding-top: 16px;
-}
-.copyright .storelogo{
-    margin-right: 38px;
-}
-.copyrightText{
-    font-size: 16px;
-    line-height: 24px;
-}
-.copyrightList{
-    display: flex;
-    color: $secondaryText;
-    align-items: center;
-}
-.copyright ul.copyrightList{
-    position: relative;
-    justify-content: flex-end;
-    width: 30%;
-}
-.copyrightListItem{
-    width: 50%;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: right;
-}
-.copyrightListItem a{
-    text-decoration: none;
-    color: $secondaryText;
-}
+
+
+

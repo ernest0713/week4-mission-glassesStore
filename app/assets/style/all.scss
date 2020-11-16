@@ -1,8 +1,21 @@
 @import "./scss/variables";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@500&display=swap');
-@import "./scss/utility";
-@import "./scss/index";
 
-/* RWD setting */
-@import "./scss/media";
+@import "./scss/component/pagination";
+@import "./scss/component/branchCard";
+@import "./scss/component/subMenu";
+@import "./scss/component/tags";
+@import "./scss/component/route";
+
+@import "./scss/utility";
+@import "./scss/header";
+@import "./scss/footer";
+@import "./scss/index";
+@import "./scss/classic";
+@import "./scss/classicSunglass";
+@import "./scss/location";
+@import "./scss/locationDetail";
+@import "./scss/question";
+@import "./scss/blog";
+@import "./scss/blogDetail";

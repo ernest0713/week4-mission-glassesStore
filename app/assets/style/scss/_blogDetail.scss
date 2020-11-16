@@ -1,0 +1,169 @@
+.blogDetail{
+    .route, .topTags{
+        @media (max-width: $breakpoint-pc-lg){
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+.tagsList{
+    @media (max-width: $breakpoint-phone-md){
+        margin-bottom: 40px;
+    }
+    .tagsTitle{
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        line-height: 42px;
+        color: $fouthText;
+        @media (max-width: $breakpoint-phone-md){
+            font-size: 20px;
+        }
+    }
+}
+
+
+.post{
+    display: flex;
+    @media (max-width: $breakpoint-pc-lg){
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @media (max-width: $breakpoint-phone-md){
+        padding-right: 15px;
+        padding-left: 15px;
+        flex-wrap: wrap;
+    }
+    .postContent{
+        width: 74%;
+        margin-right: 30px;
+        @media (max-width: $breakpoint-phone-md){
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+    .tagsList{
+        width: 23%;
+        @media (max-width: $breakpoint-phone-md){
+            width: 100%;
+        }
+    }
+    .postTitle{
+        font-size: 48px;
+        line-height: 95px;
+        @media (max-width: $breakpoint-phone-lg){
+            font-size: 32px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .postSubTitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 23px;
+        .postSubTitleText{
+            font-size: 28px;
+            line-height: 42px;
+            @media (max-width: $breakpoint-phone-lg){
+                font-size: 16px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        .postDate{
+            font-size: 16px;
+            line-height: 24px;
+            @media (max-width: $breakpoint-phone-lg){
+                font-size: 14px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+    .postBody{
+        margin-bottom: 50px;
+        .postImg{
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .postText{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 36px;
+            @media (max-width: $breakpoint-phone-lg){
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .postFoot{
+        margin-bottom: 150px;
+        @media (max-width: $breakpoint-phone-md){
+            margin-bottom: 40px;
+        }
+        .postLinkList{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24px;
+            @media (max-width: $breakpoint-phone-md){
+                flex-wrap: wrap;
+            }
+        }
+        .postLink{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            span:first-child{
+                margin-right: 8px;
+            }
+            
+        }
+        .postItem:nth-child(2) .postLink{
+            @media (max-width: $breakpoint-phone-md){
+                flex-direction: row-reverse;
+                span{
+                    margin-top: 8px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .postLink:visited{
+            text-decoration: none;
+            color: #000;
+        }
+        .postLink:hover, .postLink:active{
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.shareList{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 16px;
+    .shareText{
+        color: $thirdText;
+        margin-right: 19px;
+    }
+    .share{
+        display: flex;
+        .shareItem{
+            margin-right: 16px;
+        }
+    }
+}

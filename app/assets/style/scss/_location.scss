@@ -1,0 +1,104 @@
+.location{
+    .banner{
+        height: 304px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true");  
+        @media (max-width: $breakpoint-pc-lg){
+            padding-right: 39px;
+            padding-left: 39px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    .subTitle{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        h2{
+            font-size: 64px;
+            line-height: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @media (max-width: $breakpoint-pc-md){
+                font-size: 48px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 28px;
+            }
+        }
+        .locationIcon{
+            width: 40px;
+            height: 57px;
+            @media (max-width: $breakpoint-pc-md){
+                width: 30px;
+                height: 43px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                width: 16px;
+                height: 24px;
+            }
+        }
+        
+    }
+}
+.storeAddress{
+    padding-top: 20px;
+    padding-bottom: 150px;
+    @media (max-width: $breakpoint-pc-lg){
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    @media (max-width: $breakpoint-phone-md){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .choice{
+        margin-bottom: 38px;
+        label{
+            width: calc(24px *4);
+            font-size: 24px;
+            line-height: 30px;
+            margin-right: 20px;
+            @media (max-width: $breakpoint-phone-md){
+                font-size: 16px;
+                margin-right: 12px;
+            }
+        }
+        select{
+            width: 324px;
+            height: 45px;
+            padding: 10px 20px;
+            font-size: 18px;
+            @media (max-width: $breakpoint-pc-lg){
+                width: 237px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+
+    }
+    & > ul{
+        display: flex;
+        flex-wrap: wrap;
+        & > li{
+            margin-right: 3%;
+            margin-bottom: 32px;
+            width: 30%;
+            @media (max-width: $breakpoint-pc-md){
+                width: 45%;
+                margin-right: 5%;
+                margin-bottom: 20px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

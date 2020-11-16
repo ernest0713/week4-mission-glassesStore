@@ -1,0 +1,23 @@
+.route{
+    display: flex;
+    margin-bottom: 17px;
+    .routeItem:nth-child(n+2):before{
+        content: "/";
+    }
+    .routeLink{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+        &.active{
+            color: $fouthText
+        }
+        @media (max-width: $breakpoint-phone-md){
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    .routeLink:hover{
+        color: $primaryText;
+    }
+}

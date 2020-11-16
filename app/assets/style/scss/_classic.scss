@@ -1,0 +1,172 @@
+.classicNavbar{
+    max-width: 1401px;
+    margin: 0 auto;
+    .classicMenu{
+        display: flex;
+        justify-content: center;
+        li{
+            width: 33.33%;
+            border: 1px solid #DCDCDC;
+            &.active{
+                border-bottom: 16px solid $primaryText;
+                @media (max-width: $breakpoint-phone-lg){
+                    border-bottom: 8px solid $primaryText;
+                }
+                @media (max-width: $breakpoint-phone-md){
+                    border-bottom: 4px solid $primaryText;
+                }
+            }
+        }
+
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-size: 42px;
+            line-height: 63px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            @media (max-width: $breakpoint-pc-md){
+                font-size: 28px;
+                line-height: 42px;
+            }
+            @media (max-width: $breakpoint-phone-lg){
+                font-size: 14px;
+                line-height: 19px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+            @media (max-width: $breakpoint-phone-md){
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            img{
+                filter: brightness(0);
+            }
+            span{
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+}
+
+.classicBanner{
+    display: flex;
+    justify-content: space-between;
+    div{
+        width: 50%;
+        min-height: 309px;
+        @media (max-width: $breakpoint-phone-md){
+            min-height: 144px;
+        }
+    }
+    div:first-child{
+        margin-right: 30px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-1.png?raw=true");
+        @media (max-width: $breakpoint-pc-md){
+            margin-right: 0;
+        }
+    }
+    div:last-child{
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/banner-2.png?raw=true");
+    }
+}
+.productOptical{
+    padding-top: 88px;
+    padding-bottom: 88px;
+    @media (max-width: $breakpoint-phone-lg){
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: $breakpoint-phone-md){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        font-size: 42px;
+        line-height: 63px;
+        text-align: center;
+        @media (max-width: $breakpoint-phone-lg){
+            font-size: 32px;
+            line-height: 48px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            font-size:20px;
+        }
+    }
+    h3{
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        @media (max-width: $breakpoint-phone-lg){
+            font-size: 24px;
+            line-height: 36px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            font-size:16px;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @media (max-width: $breakpoint-phone-lg){
+            padding-top: 32px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            padding-top: 20px;
+        }
+    }
+    .productItem{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        margin-bottom: 104px;
+        @media (max-width: $breakpoint-phone-lg){
+            width: 48%;
+            margin-bottom: 72px;
+        }
+        @media (max-width: $breakpoint-phone-md){
+            width: 345px;
+            margin-bottom: 32px;
+        }
+        img{
+            height: 164px;
+        }
+        div{
+            width: 100%;
+        }
+        div:nth-of-type(1){
+            display: flex;
+            justify-content: space-between;
+            span{
+                font-size: 24px;
+                line-height: 36px;
+                text-transform: uppercase;
+            }
+            span:last-child{
+                color: $primaryText;
+            }
+        }
+        button{
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 0;
+            cursor: pointer;
+        }
+        button:first-child{
+            background-color: #5F3E2D;
+            margin-right: 8px;
+        }
+        button:last-child{
+            background-color: #B75929;
+        }
+    }
+}
