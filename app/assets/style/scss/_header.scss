@@ -13,12 +13,7 @@
     }
     .menu {
         display: flex;
-        li{
-            
-        }
-        li:nth-child(1){
-            margin-left: 0;
-        }
+        
         @media (max-width: $breakpoint-phone-md){
             &{
                 width: 100%;
@@ -42,12 +37,8 @@
         text-decoration: none;
         padding: 10px 31px;
         position: relative;
-        &:hover{
-            &:before{
-                content:"=>";
-                position: absolute;
-                left: 10px;
-            }
+        &:hover,&:active,&:visited{
+            color: $secondaryText;
         }
     }
 }

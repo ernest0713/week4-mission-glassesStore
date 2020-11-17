@@ -8,6 +8,9 @@
         padding-right: 20%;
         text-align: right;
         color: $primaryText;
+        @media (max-width: $breakpoint-phone-md){
+            background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true");
+        }
         h3{
             font-size: 36px;
             line-height: 54px;
