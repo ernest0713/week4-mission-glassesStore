@@ -262,8 +262,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .navbar .menu li:nth-child(1) {
-      margin-left: 0; }
     @media (max-width: 575px) {
       .navbar .menu {
         width: 100%;
@@ -284,10 +282,8 @@ body {
     text-decoration: none;
     padding: 10px 31px;
     position: relative; }
-    .navbar .menuItem:hover:before {
-      content: "=>";
-      position: absolute;
-      left: 10px; }
+    .navbar .menuItem:hover, .navbar .menuItem:active, .navbar .menuItem:visited {
+      color: #FFFFFF; }
 
 .footer {
   background: #AA0601;
@@ -435,6 +431,9 @@ body {
   padding-right: 20%;
   text-align: right;
   color: #650300; }
+  @media (max-width: 575px) {
+    .index .banner {
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true"); } }
   .index .banner h3 {
     font-size: 36px;
     line-height: 54px; }
